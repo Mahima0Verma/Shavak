@@ -1,0 +1,152 @@
+{% load static %}
+
+
+
+    <div id="preloader"></div>
+
+    <style>
+        .sidebar {
+            width: 81px;
+            height: 83px;
+            position: fixed;
+            left: 18px;
+            top: 520px;
+            z-index: 999999;
+        }
+    </style>
+
+    <style>
+        .sidebar2 {
+            width: 27px;
+            height: 153px;
+            position: fixed;
+            right: 1px;
+            top: 225px;
+            z-index: 999999;
+
+
+        }
+    </style>
+
+    <div class='sidebar'><a href="https://api.whatsapp.com/send?phone=919810269507" target="_blank"><img
+                src="{% static 'assets/images/bg/whatsapp_icon.png' %}"></a></div>
+
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+
+    <div class="main-container">
+        <!--header-top-area start-->
+        <div class="header-top-area hidden-xs">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="custom-right">
+                            <div class="top-phone contact">
+
+                                <span><i class="fa fa-phone"></i></span><a href="#"> +91 -8737843190</a>, <a
+                                    href="#">+91 -8791476419</a>
+                            </div>
+                            <div class="top-mail contact">
+                                <span><i class="fa fa-envelope"></i></span><a
+                                    href="#">shavak24x7@gmail.com</a> &nbsp;&nbsp;<a
+                                    href="{% url 'home' %}"><img src="{% static 'assets/images/bg/home_icon.png' %}" width="16"
+                                        height="16"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header-top-area end-->
+
+        <!-- navbar start -->
+        <header class="header hidden-xs" id="sticker">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle" type="button" data-toggle="collapse"
+                                data-target=".js-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="{% url 'home' %}">
+                                <div class="logo"  style="margin-top: 1oopx;"> 
+                                    <img src="{% static 'assets/images/logo/logo.png' %}" alt="Shavak e-Rickshaw">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <nav class="navbar">
+                            <div class="collapse navbar-collapse js-navbar-collapse">
+                                <ul class="nav navbar-nav">
+
+
+
+
+                                    <li><a href="{% url 'home' %}"> Home</a></li>
+
+                                    <li><a href="{% url 'about' %}">About</a></li>
+
+
+                                    <li><a href="{% url 'services' %}">services</a></li>
+
+                                    <li><a href="{% url 'media' %}">Gallery</a></li>
+
+                                    <li><a href="{% url 'contact' %}">Contact us</a></li>
+
+
+
+
+                                </ul>
+                            </div><!-- /.nav-collapse -->
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- header end -->
+
+        <!-- mobile-menu-area-start -->
+        <div class="mobile-menu-area hidden-sm visible-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="mobile-menu">
+                            <nav id="mobile-menu-active">
+                                <ul>
+
+
+
+
+
+
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+
+                                    <li><a href="{% url 'about' %}">About</a></li>
+
+
+
+                                    <li><a href="{% url 'services' %}">Services</a></li>
+
+                                    <li><a href="{% url 'media' %}">Media Center</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile-menu-area-end -->

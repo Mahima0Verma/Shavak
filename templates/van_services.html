@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!--services-area start-->
+ <section id="services-area" class="services-area pdd-40">
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-md-12">
+
+
+              <div class="section-title text-center">
+                    <h3>Van Service</h3>
+
+                     <div class="row">
+
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th class="f-22">Destination</th>
+      <th class="f-22">Fare</th>
+      <th class="f-22">Timing</th>
+      <th class="f-22">Name</th>
+      <th class="f-22">Phone No.</th>
+
+  </tr>
+  {% if key1 %}
+  {% for i in key1 %}
+    <tr>
+      <td class="f-22">{{i.destination}}</td>
+      <td class="f-22">{{i.fare}}</td>
+      <td class="f-22">{{i.time}}</td>
+      <td class="f-22">{{i.name}}</td>
+      <td class="f-22">{{i.phone}}</td>
+    </tr>
+    {% endfor %}
+
+    {% endif %}
+
+  </tbody>
+</table>
+
+
+
+
+            </div>
+
+
+  </div>
+
+</section>
+<!--services-area end-->
+
+<!--portfolio-area start-->
+<div class="portfolio-area pdd-10 p-white">
+    <div class="container">
+
+    <div class="no-container">
+        <div class="portfolio">
+
+           <div class="portfolio-masonry-item col3 p-colm3 logo">
+                <div class="portfolio-element"> <img class="img-responsive" src="assets/images/e-vehicles/star/saarthi_star_1.jpg" alt="">
+                    <div class="portfolio-overley">
+                        <div class="content">
+                            <div class="port-content"><a class="venobox" data-gall="myGallery" href="assets/images/e-vehicles/star/saarthi_star_1.jpg"><img src="assets/images/e-vehicles/zoom_view_icon.png" alt="" width="400" height="275" class="img-responsive"></a>
+                            <span class="p-tags"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-masonry-item col3 p-colm3 logo">
+                <div class="portfolio-element"> <img class="img-responsive" src="assets/images/e-vehicles/star/saarthi_star_2.jpg" alt="">
+                    <div class="portfolio-overley">
+                        <div class="content">
+                            <div class="port-content"><a class="venobox" data-gall="myGallery" href="assets/images/e-vehicles/star/saarthi_star_2.jpg"><img src="assets/images/e-vehicles/zoom_view_icon.png" alt="" width="400" height="275" class="img-responsive"></a>
+                            <span class="p-tags"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-masonry-item col3 p-colm3 logo">
+                <div class="portfolio-element"> <img class="img-responsive" src="assets/images/e-vehicles/star/saarthi_star_3.jpg" alt="">
+                    <div class="portfolio-overley">
+                        <div class="content">
+                            <div class="port-content"><a class="venobox" data-gall="myGallery" href="assets/images/e-vehicles/star/saarthi_star_3.jpg"><img src="assets/images/e-vehicles/zoom_view_icon.png" alt="" width="400" height="275" class="img-responsive"></a>
+                            <span class="p-tags"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+            </div>
+            </div>
+{% endblock %}
